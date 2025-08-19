@@ -1,0 +1,1 @@
+controller_joint_names: ['', 'joint_chilun_1', 'joint_FA_1', 'joint_AB_1', 'joint_BG_1', 'joint_FD_1', 'joint_DC_1', 'joint_DE_1', 'joint_EH_1', 'joint_foot_1', 'joint_TK', 'joint_KD_1', 'joint_KD_2', 'joint_chilun_2', 'joint_FA_2', 'joint_AB_2', 'joint_BG_2', 'joint_FD_2', 'joint_DC_2', 'joint_DE_2', 'joint_EH_2', 'joint_foot_2', 'joint_rotor_1', 'joint_rotor_2', ]
