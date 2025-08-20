@@ -53,7 +53,7 @@
       <joint name="root_y" type="slide" axis="0 1 0"/>
       <joint name="root_z" type="slide" axis="0 0 1"/>
       <joint name="root_yaw" type="hinge" axis="0 0 1"/>
-      <!-- <joint name="root_roll" type="hinge" axis="1 0 0"/> -->
+      <joint name="root_roll" type="hinge" axis="1 0 0"/>
       <!-- <joint name="root_pitch" type="hinge" axis="0 1 0" range="0.2 0.2"/> -->
       <inertial pos="0.06 0 0" mass="0.044953" diaginertia="6.3617e-06 3.2431e-05 3.4835e-05"/>
       <geom type="mesh" mesh="base_link" pos="0 0 0" rgba="0.792157 0.819608 0.933333 1"/>
@@ -84,15 +84,14 @@
             <joint name="joint_AB_1" pos="0 0 0" axis="0 0 1"/>
             <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.792157 0.819608 0.933333 1" mesh="link_AB_1"/>
             <geom type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="link_AB_1"/>
-            <site name="site_AB_1" pos="0.02892 0.02976 0" size="0.001" type="sphere" rgba="1 0 0 1"/>
+            <site name="site_AB_1" pos="0.02892 0.02976 0" size="0.01" type="sphere" rgba="1 0 0 1"/>
             <body name="link_BG_1" pos="0.0558 0 0" quat="0.948197 0 0 0.317683">
               <inertial pos="0.076893 0 0.002" quat="0 0.707107 0 0.707107" mass="0.0035905" diaginertia="7.49706e-06 7.49028e-06 1.63497e-08"/>
               <joint name="joint_BG_1" pos="0 0 0" axis="0 0 1"/>
               <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.792157 0.819608 0.933333 1" mesh="link_BG_1"/>
               <geom type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="link_BG_1"/>
-              <site name="site_hip_1_1" pos="0 0 0" />
-              <site name="site_BC_1" pos="0.0394 0 0" size="0.001" type="sphere" rgba="0 1 0 1"/>
-              <site name="site_BG_1" pos="0.1544 0 0" size="0.001" type="sphere" rgba="0 1 0 1"/>
+              <site name="site_BC_1" pos="0.0394 0 0" size="0.01" type="sphere" rgba="0 1 0 1"/>
+              <site name="site_BG_1" pos="0.1544 0 0" size="0.01" type="sphere" rgba="0 1 0 1"/>
             </body>
           </body>
         </body>
@@ -106,13 +105,12 @@
             <joint name="joint_DC_1" pos="0 0 0" axis="0 0 1" range="-0.5 0.5"/>
             <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.792157 0.819608 0.933333 1" mesh="link_DC_1"/>
             <geom type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="link_DC_1"/>
-            <site name="site_DC_1_1" pos="0 0 0" size="0.001" type="sphere" rgba="1 0 0 1"/>
-            <site name="site_DC_1_2" pos="0.0367 0 0" size="0.001" type="sphere" rgba="1 0 0 1"/>
+            <site name="site_DC_1_1" pos="0 0 0" size="0.01" type="sphere" rgba="1 0 0 1"/>
+            <site name="site_DC_1_2" pos="0.0367 0 0" size="0.01" type="sphere" rgba="1 0 0 1"/>
           </body>
           <body name="link_DE_1" pos="0.0619 0 -0.0045" quat="0.946091 0 0 0.323901">
             <inertial pos="0.0549831 0 -0.00175" quat="0 0.707107 0 0.707107" mass="0.00221516" diaginertia="2.44142e-06 2.4366e-06 9.34136e-09"/>
             <joint name="joint_DE_1" pos="0 0 0" axis="0 0 1" range="-0.5 0.5"/>
-            <site name="site_hip_1_2" pos="0 0 0" />
             <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.792157 0.819608 0.933333 1" mesh="link_DE_1"/>
             <geom type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="link_DE_1"/>
             <body name="link_EH_1" pos="0.11 0 -0.0055" quat="0.773849 0 0 -0.63337">
@@ -120,7 +118,7 @@
               <joint name="joint_EH_1" pos="0 0 0" axis="0 0 1" range="-0.5 0.5"/>
               <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.792157 0.819608 0.933333 1" mesh="link_EH_1"/>
               <geom type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="link_EH_1"/>
-              <site name="site_EG_1" pos="0.04 0 0" size="0.001" type="sphere" rgba="1 0 0 1"/>
+              <site name="site_EG_1" pos="0.04 0 0" size="0.01" type="sphere" rgba="1 0 0 1"/>
               <body name="foot_link_1" pos="0.1005 0 0" quat="0.38 0 0 0.924986">
                 <inertial pos="0.0241979 -0.00295432 0.0022025" quat="0.503218 0.503278 0.4967 0.496762" mass="0.0077986" diaginertia="4.90948e-06 3.74277e-06 1.326e-06"/>
                 <joint name="joint_foot_1" pos="0 0 0" axis="0 0 1" range="-0.5 0.5" damping="0.1"/>
@@ -141,16 +139,16 @@
           <joint name="joint_KD_1" pos="0 0 0" axis="0 0 -1"/>
           <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.792157 0.819608 0.933333 1" mesh="link_KD_1"/>
           <geom type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="link_KD_1"/>
-          <site name="site_KD_1_1" pos="0 0 0" size="0.001" type="sphere" rgba="1 0 0 1"/>
-          <site name="site_KD_1_2" pos="0.0393 0 0" size="0.001" type="sphere" rgba="1 0 0 1"/>
+          <site name="site_KD_1_1" pos="0 0 0" size="0.01" type="sphere" rgba="1 0 0 1"/>
+          <site name="site_KD_1_2" pos="0.0393 0 0" size="0.01" type="sphere" rgba="1 0 0 1"/>
         </body>
         <body name="link_KD_2" pos="0 0 -0.08" quat="-3.08522e-06 -0.839926 0.542701 1.99345e-06">
           <inertial pos="0.0196511 0 0.00525" quat="0 0.707107 0 0.707107" mass="0.000833547" diaginertia="1.3516e-07 1.33344e-07 3.51713e-09"/>
           <joint name="joint_KD_2" pos="0 0 0" axis="0 0 1"/>
           <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.792157 0.819608 0.933333 1" mesh="link_KD_2"/>
           <geom type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="link_KD_2"/>
-          <site name="site_KD_2_1" pos="0 0 0" size="0.001" type="sphere" rgba="1 0 0 1"/>
-          <site name="site_KD_2_2" pos="0.0393 0 0" size="0.001" type="sphere" rgba="1 0 0 1"/>
+          <site name="site_KD_2_1" pos="0 0 0" size="0.01" type="sphere" rgba="1 0 0 1"/>
+          <site name="site_KD_2_2" pos="0.0393 0 0" size="0.01" type="sphere" rgba="1 0 0 1"/>
         </body>
       </body>
       <body name="chilun_2" pos="0.023247 0.071 -0.0145" quat="-0.351381 0.351375 -0.613626 -0.613621">
@@ -168,15 +166,14 @@
             <joint name="joint_AB_2" pos="0 0 0" axis="0 0 -1"/>
             <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.792157 0.819608 0.933333 1" mesh="link_AB_2"/>
             <geom type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="link_AB_2"/>
-            <site name="site_AB_2" pos="0.02892 -0.02976 0" size="0.001" type="sphere" rgba="1 0 0 1"/>
+            <site name="site_AB_2" pos="0.02892 -0.02976 0" size="0.01" type="sphere" rgba="1 0 0 1"/>
             <body name="link_BG_2" pos="0.0558 0 0" quat="0.94736 0 0 -0.320171">
               <inertial pos="0.076893 0 -0.002" quat="0 0.707107 0 0.707107" mass="0.0035905" diaginertia="7.49706e-06 7.49028e-06 1.63497e-08"/>
               <joint name="joint_BG_2" pos="0 0 0" axis="0 0 -1"/>
               <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.792157 0.819608 0.933333 1" mesh="link_BG_2"/>
               <geom type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="link_BG_2"/>
-              <site name="site_hip_2_1" pos="0 0 0" />
-              <site name="site_BC_2" pos="0.0394 0 0" size="0.001" type="sphere" rgba="0 1 0 1"/>
-              <site name="site_BG_2" pos="0.1544 0 0" size="0.001" type="sphere" rgba="0 1 0 1"/>
+              <site name="site_BC_2" pos="0.0394 0 0" size="0.01" type="sphere" rgba="0 1 0 1"/>
+              <site name="site_BG_2" pos="0.1544 0 0" size="0.01" type="sphere" rgba="0 1 0 1"/>
             </body>
           </body>
         </body>
@@ -190,21 +187,20 @@
             <joint name="joint_DC_2" pos="0 0 0" axis="0 0 -1" range="-0.5 0.5"/>
             <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.792157 0.819608 0.933333 1" mesh="link_DC_2"/>
             <geom type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="link_DC_2"/>
-            <site name="site_DC_2_1" pos="0 0 0" size="0.001" type="sphere" rgba="1 0 0 1"/>
-            <site name="site_DC_2_2" pos="0.0367 0 0" size="0.001" type="sphere" rgba="1 0 0 1"/>
+            <site name="site_DC_2_1" pos="0 0 0" size="0.01" type="sphere" rgba="1 0 0 1"/>
+            <site name="site_DC_2_2" pos="0.0367 0 0" size="0.01" type="sphere" rgba="1 0 0 1"/>
           </body>
           <body name="link_DE_2" pos="0.0619 0 0" quat="0.945663 0 0 -0.32515">
             <inertial pos="0.0549831 0 0.00175" quat="0 0.707107 0 0.707107" mass="0.00221516" diaginertia="2.44142e-06 2.4366e-06 9.34136e-09"/>
             <joint name="joint_DE_2" pos="0 0 0" axis="0 0 -1" range="-0.5 0.5"/>
             <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.792157 0.819608 0.933333 1" mesh="link_DE_2"/>
             <geom type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="link_DE_2"/>
-            <site name="site_hip_2_2" pos="0 0 0" />
             <body name="link_EH_2" pos="0.11 0 0.0055" quat="0.772073 0 0 0.635534">
               <inertial pos="0.0555556 0 -0.001" quat="0 0.707107 0 0.707107" mass="0.00172857" diaginertia="2.00694e-06 1.99783e-06 1.02647e-08"/>
               <joint name="joint_EH_2" pos="0 0 0" axis="0 0 -1" range="-0.5 0.5"/>
               <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.792157 0.819608 0.933333 1" mesh="link_EH_2"/>
               <geom type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="link_EH_2"/>
-              <site name="site_EG_2" pos="0.04 0 0" size="0.001" type="sphere" rgba="1 0 0 1"/>
+              <site name="site_EG_2" pos="0.04 0 0" size="0.01" type="sphere" rgba="1 0 0 1"/>
               <body name="foot_link_2" pos="0.1005 0 0" quat="0.376482 0 0 -0.926424">
                 <inertial pos="0.0241979 0.00295432 0.000191446" quat="0.4967 0.496762 0.503218 0.503278" mass="0.0077986" diaginertia="4.90948e-06 3.74277e-06 1.326e-06"/>
                 <joint name="joint_foot_2" pos="0 0 0" axis="0 0 -1" range="-0.5 0.5" damping="0.1"/>
@@ -218,44 +214,30 @@
       <body name="rotor_1" pos="0.11546 -0.0016528 0.0119">
         <inertial pos="6.0533e-07 2.95976e-07 -0.00313587" quat="-0.1109 0.698356 0.1109 0.698356" mass="0.00282317" diaginertia="3.61117e-07 2.04404e-07 2.04354e-07"/>
         <joint name="joint_rotor_1" pos="0 0 0" axis="0 0 1"/>
-        <site name="rotor1_site" pos="0 0 0" size="0.001"/>
+        <site name="rotor1_site" pos="0 0 0" size="0.01"/>
         <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.992157 0.717647 0.32549 1" mesh="rotor_1"/>
         <geom type="mesh" rgba="0.992157 0.717647 0.32549 1" mesh="rotor_1"/>
       </body>
       <body name="rotor_2" pos="-0.10936 -0.00038115 0.0119">
         <inertial pos="6.17506e-07 3.16272e-07 -0.0031359" quat="-0.108155 0.698786 0.108155 0.698786" mass="0.00282316" diaginertia="3.61116e-07 2.04404e-07 2.04354e-07"/>
         <joint name="joint_rotor_2" pos="0 0 0" axis="0 0 1"/>
-        <site name="rotor2_site" pos="0 0 0" size="0.001"/>
+        <site name="rotor2_site" pos="0 0 0" size="0.01"/>
         <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.792157 0.819608 0.933333 1" mesh="rotor_2"/>
         <geom type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="rotor_2"/>
       </body>
     </body>
   </worldbody>
 
-
-  <tendon>
-    <spatial name="leg_tendon" width="0.001" rgba="0.8 0.2 0.2 1" stiffness="200" damping="0.1" springlength="0.03">
-      <site site="site_hip_1_1"/>
-      <site site="site_hip_1_2"/>
-    </spatial>
-    <spatial name="leg_tendon_2" width="0.001" rgba="0.8 0.2 0.2 1" stiffness="200" damping="0.1" springlength="0.03">
-      <site site="site_hip_2_1"/>
-      <site site="site_hip_2_2"/>
-    </spatial>
-  </tendon>
-
   <equality>
     <!-- 驱动点 T 与杆件连接点 K 约束 -->
-    <connect site1="site_AB_1" site2="site_KD_1_1" solref="0.002 1"/>
-    <connect site1="site_DC_1_1" site2="site_KD_1_2" solref="0.002 1"/>
-    <connect site1="site_DC_1_2" site2="site_BC_1" solref="0.002 1"/>
-    <connect site1="site_EG_1" site2="site_BG_1" solref="0.002 1"/>
-    <connect site1="site_AB_2" site2="site_KD_2_1" solref="0.002 1"/>
-    <connect site1="site_DC_2_1" site2="site_KD_2_2" solref="0.002 1"/>
-    <connect site1="site_DC_2_2" site2="site_BC_2" solref="0.002 1"/>
-    <connect site1="site_EG_2" site2="site_BG_2" solref="0.002 1"/>
-    <joint joint1="joint_chilun_1" joint2="joint_chilun_2" polycoef="0 1 0" solref="0.002 1"/>
-
+    <connect site1="site_AB_1" site2="site_KD_1_1"/>
+    <connect site1="site_DC_1_1" site2="site_KD_1_2"/>
+    <connect site1="site_DC_1_2" site2="site_BC_1"/>
+    <connect site1="site_EG_1" site2="site_BG_1"/>
+    <connect site1="site_AB_2" site2="site_KD_2_1"/>
+    <connect site1="site_DC_2_1" site2="site_KD_2_2"/>
+    <connect site1="site_DC_2_2" site2="site_BC_2"/>
+    <connect site1="site_EG_2" site2="site_BG_2"/>
     <!-- <connect name="tether" body1="world" body2="base_link" anchor="0 0 0.6" /> -->
   </equality>
 
@@ -263,20 +245,14 @@
 
 
   <actuator>
-    <motor name="act_joint_chilun_1" joint="joint_chilun_1" gear="1" ctrlrange="-0.5 0.05"/>
+    <motor name="act_joint_chilun_1" joint="joint_chilun_1" gear="1" ctrlrange="-0.05 0.05"/>
     <motor name="act_joint_foot_1" joint="joint_foot_1" gear="1" ctrlrange="-0.01 0.01"/>
     <!--<position name="act_joint_TK" joint="joint_TK" gear="1" ctrlrange="-1 10" ctrllimited="true"/>-->
-    <motor name="act_joint_chilun_2" joint="joint_chilun_2" gear="1" ctrlrange="-0.5 0.05"/>
+    <motor name="act_joint_chilun_2" joint="joint_chilun_2" gear="1" ctrlrange="-0.05 0.05"/>
     <motor name="act_joint_foot_2" joint="joint_foot_2" gear="1" ctrlrange="-0.01 0.01"/>
     <motor name="act_rotor_1" joint="joint_rotor_1" gear="1" ctrlrange="-0.001 0.001"/>
     <motor name="act_rotor_2" joint="joint_rotor_2" gear="1" ctrlrange="-0.001 0.001"/>
     <motor name="m1" site="rotor1_site" gear="0 0 1"/>
     <motor name="m2" site="rotor2_site" gear="0 0 1"/>
-    <!-- <general name="spring_leg"
-           tendon="leg_tendon"
-           dyntype="spring"
-           stiffness="500"
-           damping="5"
-           length0="0.03"/> 初始自然长度 -->
   </actuator>
 </mujoco>

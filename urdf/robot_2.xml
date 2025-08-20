@@ -254,8 +254,6 @@
     <connect site1="site_DC_2_1" site2="site_KD_2_2" solref="0.002 1"/>
     <connect site1="site_DC_2_2" site2="site_BC_2" solref="0.002 1"/>
     <connect site1="site_EG_2" site2="site_BG_2" solref="0.002 1"/>
-    <joint joint1="joint_chilun_1" joint2="joint_chilun_2" polycoef="0 1 0" solref="0.002 1"/>
-
     <!-- <connect name="tether" body1="world" body2="base_link" anchor="0 0 0.6" /> -->
   </equality>
 
